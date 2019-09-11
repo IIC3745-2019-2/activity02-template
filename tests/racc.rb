@@ -4,10 +4,10 @@ require_relative "../pokemon"
 
 class RACC < Minitest::Test
   def setup
-    @pokemon = Pokemon.new
+    @pokemon = Pokemon.new('Charmander', 'Fire', 100, 6, 6, 10)
   end
 
-  def test_that_pokemon_can_speak
-    assert_equal "Pokemons don't speak...", @pokemon.speak
+  def test_that_pokemon_is_alive
+    assert @pokemon.alive?
   end
 end

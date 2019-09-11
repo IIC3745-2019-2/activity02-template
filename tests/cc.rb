@@ -2,7 +2,7 @@ require "minitest/autorun"
 
 require_relative "../pokemon"
 
-class PC < Minitest::Test
+class CC < Minitest::Test
   def setup
     @pokemon = Pokemon.new('Charmander', 'Fire', 100, 6, 6, 10)
   end
